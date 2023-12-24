@@ -6,7 +6,7 @@
 <div id="login">
 <h1>Вход</h1>
 
-<form action="//файл проверить пользователя" id="loginform" method="post"name="loginform">
+<form action="check_in.php" id="loginform" method="post"name="loginform">
 <p><label for="user_login">Имя пользователя<br>
 <input class="input" id="username" name="username"size="32"  type="text" value=""></label></p>
 
@@ -24,19 +24,20 @@
   <style>
 
 body {
-    background: #DCCEE4;
+    background: #000000;
    font-family: 'Open Sans', sans-serif;
    color: #777;
 	}
 
 	a {
-   color: #673682;
+   color: #ffffff;
  font-weight: 400;
 	}
 	
 	span {
    font-weight: 300;
    color: #f58220;
+
 	}
 
 	.mlogin {
@@ -60,7 +61,7 @@ body {
 	.regtext {
    font-size: 13px;
    margin-top: 26px;
-   color: #777;
+   color: #ffffff;
 	}
 	
 	/*= КОНТЕЙНЕРЫ
@@ -71,7 +72,11 @@ body {
 	overflow: hidden;
 	width: 350px;
 	height: auto;
-	background: #fff;
+	background: #1C1C1C;
+	 letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #ffffff;
+  overflow: hidden;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
 	box-shadow: 0 1px 3px rgba(0,0,0,.13);
@@ -88,7 +93,7 @@ body {
 	}
 	
 	.container h1 {
-	color: #673682;
+	color: #ffffff;
 	text-align: center;
 	font-weight: 300;
    border: 1px dashed #777;
@@ -96,7 +101,7 @@ body {
 	}
 
 	.container label {
-	color: #777;
+	color: #ffffff;
 	font-size: 14px;
 	}
 
@@ -126,8 +131,7 @@ body {
 	
 	/*= КНОПКИ
 	--------------------------------------------------------*/
-	
-	.button{
+.button{
 	border: solid 1px #673682;
 	background: #673682;
 	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
@@ -148,6 +152,7 @@ moz-border-radius:4px;
 	background: -moz-linear-gradient(top,  #f88e11, #f06015);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 	}
+
 	/*= ПОДВАЛ
 	--------------------------------------------------------*/
 	footer {

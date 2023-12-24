@@ -6,7 +6,7 @@
 <div id="login">
 <h1>Регистрация</h1>
 
-<form action="//файл сохранить пользователя" id="loginform" method="post"name="loginform">
+<form action="save_user.php" id="loginform" method="post"name="loginform">
 <p><label for="user_login">Придумайте имя пользователя<br>
 <input class="input" id="username" name="username"size="32"  type="text" value=""></label></p>
 
@@ -18,7 +18,7 @@
   <span class="table-row"></span>
 <input class="input" id="password" name="password"size="32"  type="text" value=""></label></p>
 
-	<p class="submit"><input class="button" name="login"type= "submit" value="Войти"></p>
+	<p class="submit"><input class="button" name="login"type= "submit" value="Зарегистрироваться"></p>
 	<p class="regtext">Уже зарегистрированы? <a href= "log_in.php">Войти</a>!</p>
 	<p class="regtext"><a href= "index.php">Вернуться на главный экран</a></p>
    </form>
@@ -27,13 +27,13 @@
   <style>
 
 body {
-    background: #DCCEE4;
+    background: #000000;
    font-family: 'Open Sans', sans-serif;
    color: #777;
 	}
 
 	a {
-   color: #673682;
+   color: #ffffff;
  font-weight: 400;
 	}
 	
@@ -63,7 +63,7 @@ body {
 	.regtext {
    font-size: 13px;
    margin-top: 26px;
-   color: #777;
+   color: #ffffff;
 	}
 	
 	/*= КОНТЕЙНЕРЫ
@@ -74,7 +74,11 @@ body {
 	overflow: hidden;
 	width: 350px;
 	height: auto;
-	background: #fff;
+	background: #1C1C1C;
+	 letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #ffffff;
+  overflow: hidden;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
 	box-shadow: 0 1px 3px rgba(0,0,0,.13);
@@ -91,7 +95,7 @@ body {
 	}
 	
 	.container h1 {
-	color: #673682;
+	color: #ffffff;
 	text-align: center;
 	font-weight: 300;
    border: 1px dashed #777;
@@ -99,7 +103,7 @@ body {
 	}
 
 	.container label {
-	color: #777;
+	color: #ffffff;
 	font-size: 14px;
 	}
 
@@ -129,8 +133,7 @@ body {
 	
 	/*= КНОПКИ
 	--------------------------------------------------------*/
-	
-	.button{
+.button{
 	border: solid 1px #673682;
 	background: #673682;
 	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
@@ -151,6 +154,7 @@ moz-border-radius:4px;
 	background: -moz-linear-gradient(top,  #f88e11, #f06015);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 	}
+
 	/*= ПОДВАЛ
 	--------------------------------------------------------*/
 	footer {
