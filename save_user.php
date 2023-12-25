@@ -1,11 +1,12 @@
 <?php
 require "bd.php";
-$Login = $_POST["Login"];
-$Password = $_POST["Passwor"];
-$sql = "INSERT INTO user(Login, Password) VALUES ('$Login', 'Password')";
+$login = $_POST["login"];
+$password = $_POST["password"];
+$sql = "INSERT INTO user (login, password) VALUES ('$login', '$password')";
 if($mysqli->query($sql)){
-	echo"Данные успешно добавлены";
+echo "Данные успешно добавлены";
 } else{
-echo "Ошибка: " . $mysqli->error; 
+echo "Ошибка: " . $mysqli->error;
 }
+header("Location: index.php")
 ?>

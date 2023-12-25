@@ -8,7 +8,7 @@
 
 <form action="save_user.php" id="loginform" method="post"name="loginform">
 <p><label for="user_login">Придумайте имя пользователя<br>
-<input class="input" id="username" name="username"size="32"  type="text" value=""></label></p>
+<input class="input" id="login" name="login"size="32"  type="text" value=""></label></p>
 
 <p><label for="user_pass">Придумайте пароль<br>
   <span class="table-row"></span>
@@ -18,7 +18,7 @@
   <span class="table-row"></span>
 <input class="input" id="password" name="password"size="32"  type="text" value=""></label></p>
 
-	<p class="submit"><input class="button" name="login"type= "submit" value="Зарегистрироваться"></p>
+	<p class="submit"><input class="button" name="button"type= "submit" value="Зарегистрироваться"></p>
 	<p class="regtext">Уже зарегистрированы? <a href= "log_in.php">Войти</a>!</p>
 	<p class="regtext"><a href= "index.php">Вернуться на главный экран</a></p>
    </form>
@@ -77,7 +77,22 @@ body {
 	background: #1C1C1C;
 	 letter-spacing: 2px;
   color: #fff;
-  border: 1px solid #ffffff;
+border: 5px solid transparent;
+border-image: linear-gradient(to right, #f0075b, #1aff22);
+-moz-border-image: -moz-linear-gradient(left, #f0075b, #1aff22);
+-webkit-border-image: -webkit-linear-gradient(left, #f0075b, #1aff22);
+border-image-slice: 1;
+}
+
+
+//обводка формы
+
+
+
+
+
+
+
   overflow: hidden;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
@@ -134,10 +149,10 @@ body {
 	/*= КНОПКИ
 	--------------------------------------------------------*/
 .button{
-	border: solid 1px #673682;
-	background: #673682;
-	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+	border: solid 1px #f0075b;
+	background: #f0075b;
+	background: -webkit-gradient(linear, left top, leftbottom, from(#f0075b), to(#1aff22));
+	background: -moz-linear-gradient(top,  #f0075b, #0e1538, #1aff22);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
    color: #fff;
 	padding: 7px 12px;
@@ -149,7 +164,7 @@ moz-border-radius:4px;
 	}
 	
 	.button:hover{
-	background: #f47c20;
+	background: #1aff22;
   background: -webkit-gradient(linear, left top, leftbottom, from(#f88e11), to(#f06015));
 	background: -moz-linear-gradient(top,  #f88e11, #f06015);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');

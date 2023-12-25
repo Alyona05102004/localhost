@@ -4,17 +4,17 @@
 <body>
 <div class="container mlogin">
 <div id="login">
+	
 <h1>Вход</h1>
+<form action="save_user.php" id="loginform" method="post"name="loginform">
+<p><label for="user_login">Придумайте имя пользователя<br>
+<input class="input" id="login" name="login"size="32"  type="text" value=""></label></p>
 
-<form action="check_in.php" id="loginform" method="post"name="loginform">
-<p><label for="user_login">Имя пользователя<br>
-<input class="input" id="username" name="username"size="32"  type="text" value=""></label></p>
-
-<p><label for="user_pass">Пароль<br>
+<p><label for="user_pass">Придумайте пароль<br>
   <span class="table-row"></span>
 <input class="input" id="password" name="password"size="32"  type="text" value=""></label></p>
 
-	<p class="submit"><input class="button" name="login"type= "submit" value="Войти"></p>
+	<p class="submit"><input class="button" name="button"type= "submit" value="Войти"></p>
 	<p class="regtext">Еще не зарегистрированы? <a href= "sign_in.php">Регистрация</a>!</p>
 	<br>
 	<p class="regtext"><a href= "index.php">Вернуться на главный экран</a></p>
@@ -66,7 +66,7 @@ body {
 	
 	/*= КОНТЕЙНЕРЫ
 	--------------------------------------------------------*/
-	.container {
+		.container {
 	padding: 25px 16px 25px 10px;
 	font-weight: 400;
 	overflow: hidden;
@@ -75,12 +75,12 @@ body {
 	background: #1C1C1C;
 	 letter-spacing: 2px;
   color: #fff;
-  border: 1px solid #ffffff;
-  overflow: hidden;
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
-	box-shadow: 0 1px 3px rgba(0,0,0,.13);
-	}
+border: 5px solid transparent;
+border-image: linear-gradient(to right, #00ccff, #d400d4);
+-moz-border-image: -moz-linear-gradient(left, #00ccff, #d400d4);
+-webkit-border-image: -webkit-linear-gradient(left, #00ccff, #d400d4);
+border-image-slice: 1;
+}
 	
 	#welcome {
 	width: 500px;
@@ -132,10 +132,10 @@ body {
 	/*= КНОПКИ
 	--------------------------------------------------------*/
 .button{
-	border: solid 1px #673682;
-	background: #673682;
-	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+	border: solid 1px #00ccff;
+	background: #00ccff;
+	background: -webkit-gradient(linear, left top, leftbottom, from(#00ccff), to(#0e1538));
+	background: -moz-linear-gradient(top, #00ccff, #0e1538, #d400d4);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
    color: #fff;
 	padding: 7px 12px;
@@ -147,10 +147,10 @@ moz-border-radius:4px;
 	}
 	
 	.button:hover{
-	background: #f47c20;
-  background: -webkit-gradient(linear, left top, leftbottom, from(#f88e11), to(#f06015));
-	background: -moz-linear-gradient(top,  #f88e11, #f06015);
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+	background: #d400d4;
+  background: -webkit-gradient(linear, left top, leftbottom, from(#00ccff), to(#d400d4));
+	background: -moz-linear-gradient(top,  #00ccff, #d400d4);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ccff', endColorstr='#d400d4');
 	}
 
 	/*= ПОДВАЛ
